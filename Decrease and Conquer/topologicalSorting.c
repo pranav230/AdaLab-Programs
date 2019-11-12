@@ -3,7 +3,9 @@
 
 //Topological sorting done by source removal algorithm
 void topologicalSorting(int arr[10][10],int n){
-	int in[n],out[n],s[n],top=-1;
+	
+	//in[] is the input array that keep the count of sources for each node, out[] is the output array, s[] is the stack
+ 	int in[n],out[n],s[n],top=-1;
 	int i,j,k=0;
 	
 	//putting the number of source nodes in the input array
@@ -13,7 +15,7 @@ void topologicalSorting(int arr[10][10],int n){
 			if(arr[j][i]==1)
 				in[i]++;
 		}
-	}	
+	}
 	
 	while(1){
 		//if there is no source for the vertex then adding it to the stack and initialing the value of vertex in input array as -1
@@ -23,7 +25,7 @@ void topologicalSorting(int arr[10][10],int n){
 				in[i]=-1;
 			}
 		
-		//if there are no vertex which are having no source then break from the loop
+		//if there are no vertex which are having 0 source then exit from the loop
 		//or if the stack is empty
 		if(top==-1)
 			break;
