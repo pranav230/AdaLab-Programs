@@ -1,0 +1,64 @@
+Algorithms:
+
+function Dijkstra(Graph, source):
+	create vertex set Q
+	
+	for each vertex v in Graph:
+  		dist[v] ← INFINITY                  
+    	add v to Q                      
+	
+	dist[source] ← 0                        
+    
+	while Q is not empty:
+		u ← vertex in Q with min dist[u]    
+
+		remove u from Q 
+
+		for each neighbor v of u:           // only v that are still in Q
+			alt ← dist[u] + length(u, v)
+			if alt < dist[v]:               
+				dist[v] ← alt 
+				prev[v] ← u 
+
+	return dist[]
+
+
+
+function Prim(Graph):
+	create vertex set Q
+	
+	for each vertex v in Graph:
+  		key[v] ← INFINITY                  
+    	add v to Q 
+
+	key[source] ← 0                        
+    parent[source] ← null 					// First node is always root of MST so it does not have any parent
+
+	while Q is not empty:
+		u ← vertex in Q with min dist[u]    
+
+		remove u from Q 
+
+		for each neighbor v of u:           // only v that are still in Q
+			if Graph[u][v] < key[v]:               
+				key[v] ← Graph[u][v] 
+				parent[v] ← u 
+
+	return key[]
+
+
+
+function Kruskal(Graph G)
+	//ET is the set of edges that are in MST
+	
+	sort E in nondecreasing order of the edge weights 
+
+	ET ← ∅; ecounter ← 0 	//initialize the set of tree edges and its size
+	k ← 0 //initialize the number of processed edges
+
+	while ecounter < |V | − 1 do
+		k ← k + 1
+		if ET ∪ {eik} is acyclic
+			ET ← ET ∪ {eik}; ecounter ← ecounter + 1
+
+	return ET

@@ -1,3 +1,4 @@
+//find the shortest path for every vertices from a source vertex
 #include<stdbool.h>
 #include<stdio.h> 
 #include<limits.h>
@@ -46,7 +47,7 @@ void dijkstra(int graph[V][V], int src)
 
 	    //update the distance of vertices that are connected with picked vertex because all distances are either INT_MAX or greater than the shortest distance from the source vertex 
 	    for (int v = 0; v < V; v++) 
-	        //Update dist[v] only if is not included in tree, there is an edge from u to v, and total weight of path from src to v through u is smaller than current value of dist[v] 
+	        //Update dist[v] only if is not included in tree and there is an edge from u to v, and total weight of path from src to v through u is smaller than current value of dist[v] 
 	        if (!sptSet[v] && graph[u][v] && (dist[u] != INT_MAX) && (dist[u] + graph[u][v] < dist[v])) 
 	        	dist[v] = dist[u] + graph[u][v]; 
 	} 

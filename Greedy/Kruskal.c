@@ -1,3 +1,5 @@
+//To find the minimum cost spanning tree
+
 #include <stdio.h>
 
 const int MAXNODES = 10;

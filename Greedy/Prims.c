@@ -1,3 +1,5 @@
+//Used for finding the minimum cost spanning tree
+
 #include <limits.h> 
 #include <stdbool.h> 
 #include <stdio.h> 
@@ -54,7 +56,7 @@ void primMST(int graph[V][V])
 			// Update the key only if graph[u][v] is smaller than key[v]
 			if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v])  
 				parent[v] = u, key[v] = graph[u][v];  
-	}  
+	}
 
 	printMST(parent, graph);  
 }  
