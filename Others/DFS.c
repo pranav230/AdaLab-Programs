@@ -49,7 +49,7 @@ void fndepthfirstserach(int currentvertex,int v[MAX],int g[MAX][MAX],int n)
 	v[currentvertex]=1;
 	
 	for(i=0;i<n;i++)
-		//if the vertex that is connected to current vertex is not visited then running DFS for that vertex 
+		//if the vertex that is connected to current vertex is not visited then applying DFS for that vertex 
 		if(g[currentvertex][i]&& !v[i])
 			//here the starting vertex is the non visited vertex
 			fndepthfirstserach(i,v,g,n);
