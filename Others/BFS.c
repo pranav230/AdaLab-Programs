@@ -82,6 +82,7 @@ void fnBFS(int vertex,int g[max][max],int v[max],int n)
 	
 	//marking starting vertex as visited
 	v[vertex]=1;
+
 	//adding the starting veretx to the queue
 	enqueue(Q,&f,&r,vertex);
 	
