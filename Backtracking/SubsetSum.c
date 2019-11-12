@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 const int MAX = 100;
-int size,top=-1,count;
+int size,top=-1;
 
 //getting the information from the user
 void getInfo(int *size,int set[])
@@ -28,6 +28,7 @@ void pop()
 
 void display(int stk[])
 {
+	static int count=0;
 	int i;
 	printf("\nSolution %d is\n{ ",++count);
 	

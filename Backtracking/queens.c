@@ -80,9 +80,9 @@ void fnChessBoardShow(int n, int row[MAX])
 		for (j=0; j<n; j++)
 		{
 			if (j == row[i])
-			printf("Q ");
+				printf("Q ");
 			else
-			printf("# ");
+				printf("# ");
 		}
 		printf("\n");
 	}
