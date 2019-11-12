@@ -1,3 +1,4 @@
+//Used to find the transitive Closure of the graph
 #include <stdio.h>
 
 const int MAX = 100;
@@ -40,4 +41,4 @@ void WarshallTransitiveClosure(int graph[MAX][MAX], int numVert)
 				//i.e. if i->k and k->j then there will be a path from i->j
 				if (graph[i][j] || (graph[i][k] && graph[k][j]))
 					graph[i][j] = 1;
-} 
+}

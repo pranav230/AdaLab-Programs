@@ -1,7 +1,3 @@
-
-play_arrow
-
-brightness_4
 #include<stdio.h> 
 
 int binomialCoeff(int n, int k) 
