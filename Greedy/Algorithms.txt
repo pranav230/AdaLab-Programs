@@ -18,7 +18,6 @@ function Dijkstra(Graph, source):
 			alt ← dist[u] + length(u, v)
 			if alt < dist[v]:               
 				dist[v] ← alt 
-				prev[v] ← u 
 
 	return dist[]
 
