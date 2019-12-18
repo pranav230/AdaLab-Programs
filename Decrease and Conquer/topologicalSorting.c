@@ -1,3 +1,6 @@
+//Input : Adjacency Matrix
+//Output: Order in which vertices are popped out in topological sorting
+
 #include<stdio.h>
 #include<stdlib.h>
 
