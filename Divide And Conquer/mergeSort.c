@@ -7,10 +7,10 @@ void merge(int arr[], int l, int m, int r)
 {
 	//b is the temporary array
     int i,k,j,b[500000];
-	i=k=low;
-	j=mid+1;
+	i=k=l;
+	j=m+1;
 
-	while(i<=mid && j<=high)
+	while(i<=m && j<=r)
 	{
 		if(arr[i]<arr[j])
 			b[k++]=arr[i++];
@@ -19,15 +19,15 @@ void merge(int arr[], int l, int m, int r)
 	}
 	
 	// Copy the remaining elements of L[], if there are any
-	while(i<=mid)
+	while(i<=m)
 		b[k++]=arr[i++];
 	
 	// Copy the remaining elements of R[], if there are any 
-	while(j<=high)
+	while(j<=r)
 		b[k++]=arr[j++];
 
 	//copy the elements back to the original array
-	for(i=low;i<k;i++)
+	for(i=l;i<k;i++)
 		arr[i]=b[i];
 } 
   
