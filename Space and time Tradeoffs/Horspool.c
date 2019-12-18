@@ -1,3 +1,6 @@
+//Input : String and pattern
+//Output: Position of match if pattern is present else print not found
+
 #include<stdio.h>
 #include<string.h>
 
@@ -26,7 +29,7 @@ int searchHorspool(char* string,char* pattern,int Table[256]){
 
 		//if pattern is totally matched
 		if(j==m)
-			return i-m;
+			return i-m+1;
 
 		//increase i according to shift Table
 		i+=Table[string[i]];
