@@ -1,7 +1,7 @@
 Algorithm : DFS(v)
 
 n ← number of nodes
-Initialize visited[ ] to false (0)
+//Initialize visited[ ] to false (0)
 for(i=0;i<n;i++)
 	visited[i] = 0;
  
@@ -23,8 +23,7 @@ BFS (G, s)                 						//Where G is the graph and s is the source node
 	while ( Q is not empty)
 		v  =  Q.dequeue()						//Removing that vertex from queue,whose neighbour will be visited now
 
-		//processing all the neighbours of v
-		for all neighbours w of v in Graph G 	
+		for all neighbours w of v in Graph G 	//processing all the neighbours of v
 			if w is not visited					
-		       	Q.enqueue( w )             			//Stores w in Q to further visit its neighbour
+		       	Q.enqueue( w )             		//Stores w in Q to further visit its neighbour
 		        mark w as visited.

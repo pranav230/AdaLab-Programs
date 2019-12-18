@@ -1,3 +1,6 @@
+//Input : Directed Graph and starting vertex
+//Output: All nodes reachable from starting vertex
+
 #include<stdio.h>
 #include<stdlib.h>
 
