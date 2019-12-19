@@ -9,4 +9,4 @@ function subset_sum(int list[], int sum, int starting_index, int target_sum)
 
     else
         for( int i = starting_index; i < list.length; i++ ) 
-            subset_sum(list, sum + list[i], i + 1, target_sum); 
+            subset_sum(list, sum + list[i], i + 1, target_sum);

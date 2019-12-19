@@ -63,7 +63,7 @@ int fnFindSubset(int pos, int sum,int stk[],int set[])
 
 int main(void)
 {
-	int i,sum;
+	int i,sum,size;
 	int stk[MAX], set[MAX];
 	
 	getInfo(&size,set);
