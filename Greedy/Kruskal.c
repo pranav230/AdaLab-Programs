@@ -1,5 +1,8 @@
 //To find the minimum cost spanning tree
 
+//Input : Edges of the graph
+//Output: Minimum spanning tree
+
 #include <stdio.h>
 
 const int MAXNODES = 10;
@@ -121,7 +124,7 @@ void kruskal(int n,struct edge e[], int m)
 		printf("\nThe Spanning tree is shown below\n");
 		
 		for(i=0; i<n-1; i++)
-			printf("%d %d\n",t[i][0],t[i][1]);
+			printf("%d -> %d\n",t[i][0],t[i][1]);
 		
 		printf("\nCost of the spanning tree : %d",sum);
 	}

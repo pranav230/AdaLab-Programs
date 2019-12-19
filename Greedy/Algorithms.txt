@@ -50,7 +50,7 @@ function Prim(Graph):
 function Kruskal(Graph G)
 	//ET is the set of edges that are in MST
 	
-	sort E in nondecreasing order of the edge weights 
+	sort E in nondecreasing order of the edge weights
 
 	ET ← ∅; ecounter ← 0 	//initialize the set of tree edges and its size
 	k ← 0 //initialize the number of processed edges

@@ -1,11 +1,14 @@
 //Used for finding the minimum cost spanning tree
 
+//Input : Weighted graph 
+//Output: Minimum cost spanning tree
+
 #include <limits.h> 
 #include <stdbool.h> 
 #include <stdio.h> 
 
-#define V 5  
-  
+#define V 5
+
 //for getting the minimum key in the graph which is not visited
 int minKey(int key[], bool mstSet[])  
 {  
@@ -52,7 +55,7 @@ void primMST(int graph[V][V])
 		//consider only those which are not yet included in tree
 		for (int v = 0; v < V; v++)  
 
-			// graph[u][v] is non zero only for adjacent vertices of m  
+			// graph[u][v] is non zero only for adjacent vertices of u  
 			// Update the key only if graph[u][v] is smaller than key[v]
 			if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v])  
 				parent[v] = u, key[v] = graph[u][v];  
@@ -60,7 +63,7 @@ void primMST(int graph[V][V])
 
 	printMST(parent, graph);  
 }  
-  
+
 int main()  
 {
 	int graph[V][V] = { { 0, 2, 0, 6, 0 },  
@@ -72,4 +75,4 @@ int main()
 	primMST(graph);  
 
 	return 0;  
-} 
+}

@@ -1,4 +1,8 @@
 //find the shortest path for every vertices from a source vertex
+
+//Input : Weighted adjacency matrix and source vertex if the link is not in between two nodes then enter a big number
+//Output: Shortest distance between source vertex and all other vertex
+
 #include<stdbool.h>
 #include<stdio.h> 
 #include<limits.h>
