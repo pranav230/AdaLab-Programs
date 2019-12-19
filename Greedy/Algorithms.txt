@@ -5,7 +5,7 @@ function Dijkstra(Graph, source):
 	
 	for each vertex v in Graph:
   		dist[v] ← INFINITY                  
-    	add v to Q                      
+    		add v to Q                      
 	
 	dist[source] ← 0                        
     
