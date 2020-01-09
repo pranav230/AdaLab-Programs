@@ -38,3 +38,4 @@ Contents
 
 * __Transfrom and Conquer__
 	* Heap Sort
+	* AVL Trees
