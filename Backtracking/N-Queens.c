@@ -62,7 +62,7 @@ int fnCheckPlace(int KthQueen, int Col, int row[MAX])
 	for( i=0; i<KthQueen; i++)
 	{
 		//row[i]==col --> checks if the coloumn of the kth queeen is same as any previous queens
-		//abs(row[i]-Col)(Coloumn distance) == abs(i-KthQueen)(row distance) --> checks if the row distance and column distance from the position is same or not, if they are same then it means that it is in same column.
+		//abs(row[i]-Col)(Coloumn distance) == abs(i-KthQueen)(row distance) --> checks if the row distance and column distance from the position is same or not, if they are same then it means that the queen is on same digonal as a previous queen.
 		//if any of the condition is true then it returns false
 		if(row[i] == Col || abs(row[i]-Col) == abs(i-KthQueen))
 			return 0;
